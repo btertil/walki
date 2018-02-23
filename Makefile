@@ -1,15 +1,9 @@
-CXXFLAGS =	-O2 -g -Wall -fmessage-length=0
-
-OBJS =		Walki.o
-
-LIBS =
-
-TARGET =	Walki.exe
-
-$(TARGET):	$(OBJS)
-	$(CXX) -o $(TARGET) $(OBJS) $(LIBS)
+CXXFLAGS =	-Wall
+TARGET =	Walki
+$(TARGET):	
+	$(CXX) Walki.cpp -o $(TARGET) 
 
 all:	$(TARGET)
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(TARGET)
